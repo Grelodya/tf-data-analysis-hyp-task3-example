@@ -24,10 +24,9 @@ def solution(x: np.array, y: np.array) -> bool:
         if alternative == 'greater':
             return 1 - scipy.stats.norm.cdf(z_stat)
     
-    if proportions_diff_z_test(proportions_diff_z_stat_ind(x, y)), 'less') < 0.01:
+    if proportions_diff_z_test(proportions_diff_z_stat_ind(x, y), 'less') < 0.01:
         answer = True
     else:
-        answer = False
-    
+        answer = False    
     
     return answer
