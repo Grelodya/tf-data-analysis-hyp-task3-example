@@ -1,6 +1,10 @@
 
 import pandas as pd
 import numpy as np
+import scipy
+from statsmodels.stats.weightstats import *
+from statsmodels.stats.proportion import proportion_confint
+import statsmodels
 
 chat_id = 382319199 # Ваш chat ID, не меняйте название переменной
 
